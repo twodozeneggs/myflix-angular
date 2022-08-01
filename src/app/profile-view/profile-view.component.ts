@@ -6,7 +6,7 @@ import { UserRegistrationService } from '../fetch-api-data.service';
 import { DirectorCardComponent } from '../director-card/director-card.component';
 import { GenreCardComponent } from '../genre-card/genre-card.component';
 import { SynopsisCardComponent } from '../synopsis-card/synopsis-card.component';
-import { EditProfileComponent } from '../edit-profile/edit-profile.component';
+import { EditProfileComponent } from '../eedit-profile/edit-profile.component';
 
 @Component({
   selector: 'app-profile-view',
