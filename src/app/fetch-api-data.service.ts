@@ -52,7 +52,7 @@ export class UserRegistrationService {
   getAllMovies(): Observable<any> {
     const token = localStorage.getItem('token');
     return this.http
-      .get(apiUrl + 'horrorMovies', {
+      .get(apiUrl + 'movies', {
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
         }),
@@ -68,7 +68,7 @@ export class UserRegistrationService {
   getMovieDetails(Title: any): Observable<any> {
     const token = localStorage.getItem('token');
     return this.http
-      .get(apiUrl + `horrorMovies/${Title}`, {
+      .get(apiUrl + `movies/${Title}`, {
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
         }),
